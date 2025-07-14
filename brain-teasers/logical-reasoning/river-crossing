@@ -1,0 +1,19 @@
+Q: Four people, A, B, C and D need to get across a river. The only way to cross the river is
+by an old bridge, which holds at most 2 people at a time. Being dark, they can't cross the
+bridge without a torch, of which they only have one. So each pair can only walk at the
+speed of the slower person. They need to get all of them across to the other side as
+quickly as possible. A is the slowest and takes 10 minutes to cross; B takes 5 minutes; C
+takes 2 minutes; and D takes 1 minute.
+What is the minimum time to get all of them across to the other side?'
+
+Thoughts:
+total = 0 initially 
+
+C and D should be the only ones picking people up with the torch light cuz of their short time
+So they should both go across taking total += 2, D comes back with the light, total += 1
+A and B leave D and total += 10, then C comes back to pick D and they go back together, total += 4
+
+so two lowest distances take turn picking people up, and largest distances go together once and can't go back
+
+Ans: 2+1+10+4 = 17
+

@@ -1,0 +1,4 @@
+Q: How many trailing zeros are there in 100! (factorial of 100)? 
+
+A: count multiples of 5^n, how many times is 5 a factor
+so 20 (5's) and 4 (25's) = 24

@@ -1,0 +1,50 @@
+Q:
+You have 12 identical balls. One of the balls is heavier OR lighter than the rest (you
+don't know which). Using just a balance that can only show you which side of the tray is
+heavier, how can you determine which ball is the defective one with 3 measurements?
+
+---
+
+Tree diagram to identify the defective ball in 12 balls (using 3 weighings):
+
+```
+Start
+ |
+ |-- Weigh 1,2,3,4 vs 5,6,7,8
+ |      
+ |      |-- Left heavier (-):
+ |      |      |-- Weigh 1,2,5 vs 3,6,9
+ |      |      |      |-- Left heavier (-):
+ |      |      |      |      1 vs 2
+ |      |      |      |      |-- Left heavier: 1 is heavy
+ |      |      |      |      |-- Right heavier: 2 is heavy
+ |      |      |      |      |-- Equal: 6 is light
+ |      |      |      |-- Equal (=):
+ |      |      |      |      4 vs 7
+ |      |      |      |      |-- Left heavier: 4 is light
+ |      |      |      |      |-- Right heavier: 7 is heavy
+ |      |      |      |      |-- Equal: 8 is light
+ |      |      |      |-- Right heavier (+):
+ |      |      |      |      3 vs 9
+ |      |      |      |      |-- Left heavier: 3 is light
+ |      |      |      |      |-- Right heavier: 9 is heavy
+ |      |      |      |      |-- Equal: 5 is heavy
+ |      |-- Right heavier (+):
+ |      |      (mirror of above, with heavy/light swapped)
+ |      |-- Equal (=):
+ |             Weigh 9,10,11,12
+ |             |-- Weigh 9,10 vs 8,11 (12 aside)
+ |             |      |-- Left heavier (-):
+ |             |      |      9 vs 10
+ |             |      |      |-- Left heavier: 9 is heavy
+ |             |      |      |-- Right heavier: 10 is heavy
+ |             |      |      |-- Equal: 11 is light
+ |             |      |-- Right heavier (+):
+ |             |      |      8 vs 11
+ |             |      |      |-- Left heavier: 8 is heavy
+ |             |      |      |-- Right heavier: 11 is heavy
+ |             |      |      |-- Equal: 12 is heavy
+ |             |      |-- Equal (=):
+ |             |             12 is light or heavy, compare with a good ball to check
+```
+

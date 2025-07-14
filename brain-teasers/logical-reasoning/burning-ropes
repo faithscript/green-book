@@ -1,0 +1,8 @@
+Q: You have two ropes, each of which takes 1 hour to burn. But either rope has different
+densities at different points, so there's no guarantee of consistency in the time it takes
+different sections within the rope to burn. How do you use these two ropes to measure 45
+minutes?
+
+Thoughts:
+lighting both ends takes 30 minutes, so light both ends of 1 rope to measure 30 minutes, while lighting one end of the other
+after 30 minutes the other rope has 30 minutes left, so we can light the other end to make it add 15 minutes to the finished 30 minutes.

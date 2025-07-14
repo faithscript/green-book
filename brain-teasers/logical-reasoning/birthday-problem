@@ -1,0 +1,28 @@
+Q: 
+You and your colleagues know that your boss A's birthday is one of the following 10 dates:
+Mar 4, Mar 5, Mar 8
+Jun 4, Jun 7
+Sep 1, Sep 5
+Dec 1, Dec 2, Dec 8
+A told you only the month of his birthday, and told your colleague C only the day. After
+that, you first said: "I don't know A's birthday; C doesn't know it either." After hearing what you said, C replied: 
+"I didn't know A's birthday, but now I know it." You smiled
+and said: "Now I know it, too." After looking at the 10 dates and hearing your comments,
+your administrative assistant wrote down A's birthday without asking any questions. So
+what did the assistant write?
+
+Thoughts: 
+A is SURE that it doesn't know, and it's SURE that C doesn't know. C would know the day if it's unique, A knows that, and will be SURE, if the months that are
+wrong have unique days.
+2 and 7 are unique so take out the months that have it
+We have:
+Mar 4, Mar 5, Mar 8 
+Sep 1, Sep 5
+
+C has also reached this stage of realization, so for C to now know it, it will be a unique day in this subset, so
+Mar 4, Mar 8 ,Sep 1
+
+A is at this stage of realization, and for him to now know it, it will be a unique month in this subset, so
+Sep 1
+
+Ans: Sep 1

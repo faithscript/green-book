@@ -1,0 +1,14 @@
+Q: One hundred tigers and one sheep are put on a magic island that only has grass. Tigers
+can eat grass, but they would rather eat sheep. Assume: A. Each time only one tiger can
+eat one sheep, and that tiger itself will become a sheep after it eats the sheep. B. All
+tigers are smart and perfectly rational and they want to survive. So will the sheep be
+eaten?
+
+Thoughts:
+
+if nT = 1; TS, the tiger can eat the sheep without being scared of being eaten next
+if nT  = 2; TTS, the tigers won't eat the sheep cuz of the fear of being eaten next
+if nT = 3, TTTS, one tiger will eat the sheep, confident it wont be eating to because it becomes TTS
+if nT = 4; TTTTS, the tiger won't eat the sheep because it will be scared of being the sheep eaten in TTTTS
+
+A: even amount of sheep won't get eaten so no

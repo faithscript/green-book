@@ -1,0 +1,35 @@
+Q:
+There are 25 horses, each of which runs at a constant speed that is different from the
+other horses'.
+. Since the track only has 5 lanes, each race can have at most 5 horses. If
+you need to find the 3 fastest horses, what is the minimum number of races needed to
+identify them?
+
+Thoughts
+
+5 races with 5 diff horses:
+H H H H H 
+H H H H H
+H H H H H
+H H H H H 
+H H H H H
+
+
+for the 3 fastest, we can find the 3 fastest in each group of 5, so after 5 races we have these contenders
+
+H H H _ _
+H H H _ _
+H H H _ _
+H H H _ _
+H H H _ _  
+
+now let's compare first place, if we run this race for the first place horses, we can eliminate even more, 
+
+H H H _ _
+H H _ _ _
+H _ _ _ _
+_ _ _ _ _
+_ _ _ _ _
+Horse at the top left is definitely in top 3, then we check the other 5 to find out
+
+Ans: 7 races
