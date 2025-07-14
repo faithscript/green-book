@@ -1,0 +1,20 @@
+Q:
+There is a light bulb inside a room and four switches outside. All switches are currently
+at off state and only one switch controls the light bulb. You may turn any number of
+switches on or off any number of times you want. How many times do you need to go
+into the room to figure out which switch controls the light bulb?
+
+Alternative Solution:
+
+1. Turn on switches 1 and 2.
+2. Wait for a while (so the bulb, if controlled by 1 or 2, gets hot).
+3. Turn off switch 2 and turn on switch 3.
+4. Enter the room quickly and check the bulb:
+
+- If the bulb is **on and hot** → switch 1 controls the light.
+- If the bulb is **off and hot** → switch 2 controls the light.
+- If the bulb is **on and cold** → switch 3 controls the light.
+- If the bulb is **off and cold** → switch 4 controls the light.
+
+This method ensures you can always identify the correct switch with just one visit to the room, using both the state (on/off) and the temperature (hot/cold) of the bulb.
+

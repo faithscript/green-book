@@ -1,0 +1,40 @@
+Suppose we have 98 distinct integers from 1 to 100. What is a good way to find out the
+two missing integers (within [1, 100])?
+
+Solution:
+
+Let the two missing integers be x and y.
+
+1. Compute the sum S of the 98 given numbers.
+2. The sum of all numbers from 1 to 100 is T = 100 × 101 / 2 = 5050.
+3. The sum of the missing numbers is x + y = 5050 - S.
+
+4. Compute the sum of the squares of the 98 given numbers, call it S2.
+5. The sum of the squares of all numbers from 1 to 100 is T2 = 1^2 + 2^2 + ... + 100^2 = 100 × 101 × 201 / 6 = 338350.
+6. The sum of the squares of the missing numbers is x^2 + y^2 = 338350 - S2.
+
+Now you have two equations:
+- x + y = A (where A = 5050 - S)
+- x^2 + y^2 = B (where B = 338350 - S2)
+
+From these, you can solve for x and y:
+- (x + y)^2 = x^2 + 2xy + y^2
+- So, 2xy = (x + y)^2 - (x^2 + y^2)
+- xy = ((x + y)^2 - (x^2 + y^2)) / 2
+
+Now you have x + y and xy, so x and y are the roots of the quadratic equation:
+- t^2 - (x + y)t + xy = 0
+
+Solve this quadratic to find the two missing integers.
+
+
+Inductive Formulas:
+
+- The sum of the first n natural numbers:
+  S = 1 + 2 + ... + n = n(n + 1)/2
+
+- The sum of the squares of the first n natural numbers:
+  S2 = 1^2 + 2^2 + ... + n^2 = n(n + 1)(2n + 1)/6
+
+These formulas allow you to quickly compute the total sum and sum of squares for any n.
+

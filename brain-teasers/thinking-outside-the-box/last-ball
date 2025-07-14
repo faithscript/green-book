@@ -1,0 +1,36 @@
+Q:
+A bag has 20 blue balls and 14 red balls. Each time you randomly take two balls out.
+(Assume each ball in the bag has equal probability of being taken). You do not put these
+two balls back. Instead, if both balls have the same color, you add a blue ball to the bag;
+if they have different colors, you add a red ball to the bag. Assume that you have an
+unlimited supply of blue and red balls, if you keep on repeating this process, what will
+be the color of the last ball left in the bag?' What if the bag has 20 blue balls and 13 red
+balls instead?
+
+Answer:
+
+Let's analyze the process:
+
+- If you take two balls of the same color (BB or RR), you remove two and add one blue ball.
+- If you take two balls of different colors (BR), you remove both and add one red ball.
+
+Key insight: Every time you remove two balls, the total number of balls decreases by one.
+
+Now, focus on the number of red balls:
+- If you pick two reds (RR): you lose two reds, gain one blue (red count decreases by 2).
+- If you pick two blues (BB): you lose two blues, gain one blue (red count unchanged).
+- If you pick one red and one blue (BR): you lose one red, lose one blue, gain one red (red count unchanged).
+
+So, the only way to change the number of red balls is by picking two reds, which decreases the red count by 2. Otherwise, the parity (odd/even) of the number of red balls never changes.
+
+**Case 1: 14 red balls (even)**
+- The parity is even, and every time you remove two reds, it stays even.
+- Eventually, you will be left with one blue ball at the end.
+
+**Case 2: 13 red balls (odd)**
+- The parity is odd, and it stays odd throughout the process.
+- Eventually, you will be left with one red ball at the end.
+
+**Summary:**
+- If the initial number of red balls is even, the last ball is blue.
+- If the initial number of red balls is odd, the last ball is red.

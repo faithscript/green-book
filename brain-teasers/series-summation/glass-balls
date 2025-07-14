@@ -1,0 +1,22 @@
+You are holding two glass balls in a 100-story building. If a ball is thrown out of the
+window, it will not break if the floor number is less than X, and it will always break if
+the floor number is equal to or greater than X. You would like to determine X. What is
+the strategy that will minimize the number of drops for the worst case scenario? 
+
+Solution:
+
+The optimal strategy is to minimize the maximum number of drops needed in the worst case by using decreasing intervals:
+
+1. Drop the first ball from floor n, then n-1 floors higher, then n-2 higher, and so on. That is, drop from floors: n, n+(n-1), n+(n-1)+(n-2), ..., until you reach or exceed floor 100.
+2. When the first ball breaks, use the second ball to check each floor one by one after the previous drop, up to the breaking floor.
+
+To find the minimum n:
+- The sum n + (n-1) + (n-2) + ... + 1 must be at least 100.
+- The sum of the first n natural numbers is n(n+1)/2.
+- Solve n(n+1)/2 ≥ 100. The smallest integer n is 14 (since 14×15/2 = 105).
+
+So, drop the first ball from floors 14, 27 (14+13), 39 (14+13+12), 50, 60, 69, 77, 84, 90, 95, 99, 100, etc., decreasing the interval by 1 each time.
+
+Why decrease the interval? By reducing the interval by 1 each time, you ensure that, no matter when the first ball breaks, the total number of drops (first + second ball) is always at most n. This guarantees the minimum number of drops in the worst case.
+
+Thus, the minimum number of drops required in the worst case is 14. 

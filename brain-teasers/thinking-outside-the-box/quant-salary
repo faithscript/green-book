@@ -1,0 +1,14 @@
+Q:
+Eight quants from different banks are getting together for drinks. They are all interested
+in knowing the average salary of the group. Nevertheless, being cautious and humble
+individuals, everyone prefers not to disclose his or her own salary to the group. Can you
+come up with a strategy for the quants to calculate the average salary without knowing
+other people's salaries?
+
+Answer Summary:
+
+One quant picks a random number, adds it to their salary, and passes the sum to the next person.
+Each quant adds their own salary and passes it on. After the last quant, the sum returns to the first, 
+who subtracts the random number. The group then divides the total by 8 to get the average salary, without 
+anyone knowing individual salaries.
+

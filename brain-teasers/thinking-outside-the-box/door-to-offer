@@ -1,0 +1,58 @@
+Q:
+You are facing two doors. One leads to your job offer and the other leads to exit. In front
+of either door is a guard. One guard always tells lies and the other always tells the truth.
+You can only ask one guard one yes/no question. Assuming you do want to get the job
+offer, what question will you ask?
+
+Decision Tree Explanation:
+
+Ask one guard: "If I asked the other guard which door leads to the offer, would they say this one?"
+
+Decision Tree:
+
+Start
+ |
+ |-- Ask the question above to either guard
+      |
+      |-- If the answer is YES:
+      |      Do NOT choose this door
+      |
+      |-- If the answer is NO:
+             Choose this door
+
+This works because:
+- If you ask the truth-teller, they truthfully report the liar's answer (which would be a lie).
+- If you ask the liar, they lie about the truth-teller's answer (which would be the truth).
+- In both cases, the answer always points you away from the wrong door and toward the correct one.
+
+Detailed Decision Tree Proof:
+
+Let D1 = Door 1, D2 = Door 2 (one is the offer, one is exit)
+Let G1 = Truth-teller, G2 = Liar
+Suppose you want to know if D1 is the offer door.
+
+Ask either guard: "If I asked the other guard if D1 is the offer, would they say YES?"
+
+Case 1: D1 is the offer
+  - G1 (Truth-teller):
+      - G2 (Liar) would say NO (because D1 is the offer, but G2 lies)
+      - G1 truthfully reports NO
+  - G2 (Liar):
+      - G1 (Truth-teller) would say YES (because D1 is the offer)
+      - G2 lies and says NO
+  => In both cases, the answer is NO if D1 is the offer
+
+Case 2: D1 is NOT the offer
+  - G1 (Truth-teller):
+      - G2 (Liar) would say YES (because D2 is the offer, but G2 lies)
+      - G1 truthfully reports YES
+  - G2 (Liar):
+      - G1 (Truth-teller) would say NO (because D1 is not the offer)
+      - G2 lies and says YES
+  => In both cases, the answer is YES if D1 is NOT the offer
+
+Summary:
+- If the answer is YES, D1 is NOT the offer (so do not choose it)
+- If the answer is NO, D1 IS the offer (so choose it)
+
+This logic works for either door and either guard, so you always find the correct door.

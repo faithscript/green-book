@@ -1,0 +1,21 @@
+Q:
+A sultan has captured 50 wise men. He has a glass currently standing bottom down.
+Every minute he calls one of the wise men who can choose either to turn it over (set it
+upside down or bottom down) or to do nothing. The wise men will be called randomly,
+possibly for an infinite number of times. When someone called to the sultan correctly
+states that all wise men have already been called to the sultan at least once, everyone
+goes free. But if his statement is wrong, the sultan puts everyone to death. The wise men
+are allowed to communicate only once before they get imprisoned into separate rooms
+(one per room). Design a strategy that lets the wise men go free.
+
+
+Solution Summary:
+
+- One wise man is chosen as the "spokesman." The other 49 are "regulars."
+- Each regular wise man, the first time he is called and finds the glass bottom down, flips it upside down. If the glass is already upside down or he has already flipped it once, he does nothing.
+- The spokesman, whenever called and finds the glass upside down, flips it bottom down and keeps a count of how many times he does this. If the glass is already bottom down, he does nothing.
+- Each time the spokesman flips the glass from upside down to bottom down, it means a new regular wise man has signaled their first visit.
+- When the spokesman has flipped the glass 49 times, he knows all regulars have been called at least once and can safely declare it.
+
+This strategy guarantees that the wise men will go free, using the glass as a signaling and counting device.
+

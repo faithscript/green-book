@@ -1,0 +1,23 @@
+Q:
+A clock (numbered 1 - 12 clockwise) fell off the wall and broke into three pieces. You
+find that the sums of the numbers on each piece are equal. What are the numbers on each
+piece? (No strange-shaped piece is allowed.)
+
+Solution:
+
+First, calculate the total sum of the numbers 1 to 12:
+Sum = 1 + 2 + ... + 12 = (12 × 13) / 2 = 78
+
+If the clock is broken into three pieces with equal sums, each piece must sum to 78 / 3 = 26.
+
+One possible way to split the clock into three contiguous pieces (no strange shapes) is:
+- Piece 1: 12, 1, 2, 11 (sum = 12 + 1 + 2 + 11 = 26)
+- Piece 2: 3, 10, 4, 9 (sum = 3 + 10 + 4 + 9 = 26)
+- Piece 3: 5, 8, 6, 7 (sum = 5 + 8 + 6 + 7 = 26)
+
+Thus, the numbers on each piece are:
+- (12, 1, 2, 11)
+- (3, 10, 4, 9)
+- (5, 8, 6, 7)
+
+Each group is a contiguous arc on the clock face, and all sums are equal to 26.

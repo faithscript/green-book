@@ -1,0 +1,16 @@
+Q:
+There are 10 bags with 100 identical coins in each bag. In all bags but one, each coin
+weighs 10 grams. However, all the coins in the counterfeit bag weigh either 9 or 1
+grams. Can you find the counterfeit bag in only one weighing, using a digital scale that
+tells the exact weight?
+
+Solution:
+
+1. Label the bags from 1 to 10.
+2. Take a unique number of coins from each bag: 1 coin from Bag 1, 2 coins from Bag 2, ..., up to 10 coins from Bag 10.
+3. Weigh all these coins together on the digital scale. The total number of coins is 1+2+...+10 = 55.
+4. If all coins were genuine (10 grams each), the total weight would be 55 × 10 = 550 grams.
+5. If the counterfeit bag contains 9-gram coins, the total weight will be less than 550 grams. The difference (550 - actual weight) tells you the bag number: difference = number of coins taken from the counterfeit bag.
+6. If the counterfeit bag contains 1-gram coins, the difference will be much larger: (550 - actual weight) divided by 9 gives the bag number.
+
+By using this method, you can identify the counterfeit bag in just one weighing. 

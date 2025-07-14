@@ -1,0 +1,29 @@
+Q:
+You just had two dice custom-made. Instead of numbers 1 - 6, you place single-digit
+numbers on the faces of each dice so that every morning you can arrange the dice in a
+way as to make the two front faces show the current day of the month. You must use
+both dice (in other words, days 1 - 9 must be shown as 01 - 09), but you can switch the order of the dice 
+if you want. What numbers do you have to put on the six faces of each
+of the two dice to achieve that?
+
+Answer:
+
+To display all days from 01 to 31, you need to be able to show every two-digit combination from 01 to 31 using the two dice. Each die can show one digit, and you can swap the dice to show both orders.
+
+Key insight: The digit 6 can be used as a 9 by turning the die upside down.
+
+- Die 1: 0, 1, 2, 3, 4, 5
+- Die 2: 0, 1, 2, 6, 7, 8
+
+But to cover all numbers, the standard solution is:
+- Die 1: 0, 1, 2, 3, 4, 5
+- Die 2: 0, 1, 2, 6, 7, 8
+
+With 6 doubling as 9, you can display:
+- 01 to 09 (using 0 on one die and 1-9 on the other)
+- 10 to 19 (using 1 on one die and 0-9 on the other)
+- 20 to 29 (using 2 on one die and 0-9 on the other)
+- 30, 31 (using 3 on one die and 0, 1 on the other)
+
+Thus, you can display every day of the month from 01 to 31 with these two dice.
+

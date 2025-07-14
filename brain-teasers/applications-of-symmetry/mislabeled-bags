@@ -1,0 +1,16 @@
+Q:
+You are given three bags of fruits. One has apples in it; one has oranges in it; and one
+has a mix of apples and oranges in it. Each bag has a label on it (apple, orange or mix).
+Unfortunately, your manager tells you that ALL bags are mislabeled. Develop a strategy
+to identify the bags by taking out minimum number of fruits? You can take any number
+of fruits from any bags.
+
+Solution Summary:
+
+Since all bags are mislabeled, pick one fruit from the bag labeled "mix." If you get an apple, that bag must be the apple-only bag. If you get an orange, it must be the orange-only bag. Use this information to deduce the correct contents of the other two bags:
+- The bag labeled with the other single fruit must be the mix (since it can't be what the label says, nor the one you just identified).
+- The remaining bag must be the other single-fruit bag.
+
+Thus, you can identify all bags with just one pick.
+
+

@@ -1,0 +1,16 @@
+Can you pack 53 bricks of dimensions 1x1x4 into a 6x6x6 box?
+
+Answer:
+
+This problem is an extension of the classic chessboard domino problem:
+
+In the chessboard problem, you have an 8x8 board with two opposite corners removed. Each domino covers one black and one white square. Removing two same-color corners leaves an imbalance (30 black, 32 white), so it's impossible to cover the board with dominoes.
+
+For the 3D box:
+- The 6x6x6 box can be divided into 27 small 2x2x2 cubes (like a 3D chessboard).
+- Color these cubes alternately black and white. There will be 14 of one color and 13 of the other.
+- Any 1x1x4 brick placed in the box must pass through both black and white cubes, just as a domino covers both colors.
+- Each 2x2x2 cube can be used by at most 4 bricks. For the color with only 13 cubes, that's 13 x 4 = 52 bricks.
+- To pack 53 bricks, you'd need to use a cube more than 4 times, which is impossible without overlap or sticking out.
+
+So, even though the total volume fits, it is **impossible** to pack 53 bricks of size 1x1x4 into a 6x6x6 box.

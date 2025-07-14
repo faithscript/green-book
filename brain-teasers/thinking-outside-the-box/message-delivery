@@ -1,0 +1,18 @@
+Q:
+You need to communicate with your colleague in Greenwich via a messenger service.
+Your documents are sent in a padlock box. Unfortunately the messenger service is not
+secure, so anything inside an unlocked box will be lost (including any locks you place
+inside the box) during the delivery. The high-security padlocks you and your colleague
+each use have only one key which the person placing the lock owns. How can you
+securely send a document to your colleague?
+
+Answer:
+
+You can securely send the document using the following process:
+
+1. Place the document in the box and lock it with your own padlock. Send the locked box to your colleague.
+2. Your colleague cannot open your lock, but they can add their own padlock to the box (so now the box has two locks). They send the box back to you.
+3. You remove your own padlock (leaving only your colleague's lock on the box) and send the box back to your colleague.
+4. Now your colleague can unlock their own padlock and retrieve the document.
+
+At no point is the box unlocked while in transit, and neither party ever has access to the other's key. This ensures the document is securely delivered.

@@ -1,0 +1,31 @@
+Q:
+Suppose that you are blind-folded in a room and are told that there are 1000 coins on the
+floor. 980 of the coins have tails up and the other 20 coins have heads up. Can you
+separate the coins into two piles so to guarantee both piles have equal number of heads?
+Assume that you cannot tell a coins side by touching it, but you're allowed to turn over any number of coins\
+
+Solution Summary:
+
+Take any 20 coins at random and separate them from the rest (making two piles: 20 and 980 coins). Flip all 20 coins in the smaller pile. Now, both piles are guaranteed to have the same number of heads, regardless of the original arrangement.
+
+Mathematical Explanation (Generalized):
+
+Let n = number of heads among the total coins.
+Take any n coins at random and separate them from the rest (making two piles: n and (total - n) coins).
+
+Let m = number of heads in the n-coin pile (so there are n-m tails in this pile).
+Since there are n heads in total, the (total - n)-coin pile has (n - m) heads.
+
+After flipping all n coins in the small pile:
+- The m heads become m tails.
+- The (n - m) tails become (n - m) heads.
+
+So, after flipping, the n-coin pile has exactly (n - m) heads.
+
+Therefore:
+- Number of heads in n-coin pile after flipping = (n - m)
+- Number of heads in (total - n)-coin pile = (n - m)
+
+Both piles have the same number of heads, regardless of the value of m.
+
+This symmetry is guaranteed by the formula and the flipping operation.
