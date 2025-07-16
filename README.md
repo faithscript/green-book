@@ -1,1 +1,2 @@
-My solutions and practice work for questions from the Green Book.
+tracking solutions and practice work for trading interview using the Green Book.
+current zetemac: 2.3secs per question
