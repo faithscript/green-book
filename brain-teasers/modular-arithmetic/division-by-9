@@ -1,0 +1,11 @@
+Given an arbitrary integer, come up with a rule to decide whether it is divisible by 9 and
+prove it.
+
+Thoughts:
+digits can be separated into N = d₁ × 10^(n-1) + d₂ × 10^(n-2) + ... + dₙ₋₁ × 10¹ + dₙ × 10⁰
+since 10 = 1%9;
+10^k  = 1 mod 9 for any k >= 0
+
+so N mod 9 = just the addition of the digits mod 9
+
+so N mod 9 = 0 when the summation of digits can be divided by 9

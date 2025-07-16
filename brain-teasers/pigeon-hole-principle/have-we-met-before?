@@ -1,0 +1,17 @@
+Q:
+Show me that, if there are 6 people at a party, then either at least 3 people met each other
+before the party, or at least 3 people were strangers before the party.
+
+Solution (Graph Theory):
+
+This is a classic application of Ramsey Theory (specifically, Ramsey number R(3,3) = 6).
+
+Represent each person as a vertex in a graph. Draw an edge between two people if they knew each other before the party; otherwise, leave the edge absent (or color it differently for strangers).
+
+Pick any person A. There are 5 other people, so A has 5 edges connecting to others. By the pigeonhole principle, at least 3 of these edges must be the same type (either all "acquaintance" or all "stranger").
+
+Suppose A knows at least 3 people (call them B, C, D). If any of B, C, D know each other, then together with A, they form a group of 3 mutual acquaintances. If none of B, C, D know each other, then they form a group of 3 mutual strangers.
+
+The same logic applies if A is a stranger to at least 3 people.
+
+Therefore, among any 6 people, there must be either a group of 3 mutual acquaintances or a group of 3 mutual strangers.

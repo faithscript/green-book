@@ -1,0 +1,10 @@
+You split 1000 coins into two piles and count the number of coins in each pile. If there
+are x coins in pile one and y coins in pile two, you multiple x by y to get xy. Then you
+split both piles further, repeat the same counting and multiplication process, and add the
+new multiplication results to the original. For example, you split x to x, andx, y to y,
+and ½ , then the sum is xy + x,x + y,%. The same process is repeated until you only
+have piles of 1 stone each. What is the final sum? (The final l's are not included in the
+sum.) Prove that you always get the same answer no matter how the piles are divided.
+
+ans: prove it for trees using base cases of 2, 3, 4 then you find out that
+for n the answer is n(n-1)/2

@@ -1,0 +1,25 @@
+One hundred prisoners are given the chance to be set free tomorrow. They are all told
+that each will be given a red or blue hat to wear. Each prisoner can see everyone else's
+hat but not his own. The hat colors are assigned randomly and once the hats are placed
+on top of each prisoner's head they cannot communicate with one another in any form, or
+else they are immediately executed. The prisoners will be called out in random order and
+the prisoner called out will guess the color of his hat. Each prisoner declares the color of
+his hat so that everyone else can hear it. If a prisoner guesses correctly the color of his
+hat, he is set free immediately; otherwise he is executed.
+They are given the night to come up with a strategy among themselves to save as many
+prisoners as possible. What is the best strategy they can adopt and how many prisoners
+can they guarantee to save?
+
+
+Thoughts:
+The prisoners need to use the first one as a sacrifice to communicate info to everyone else about the overall parity
+
+They need to agree on the parity system, lets say red 1 blue 0
+
+The Chain of Information
+The first prisoner establishes the "baseline parity" for everyone.
+Each subsequent prisoner then:
+
+Counts the red hats they can see among the remaining prisoners
+Remembers what all previous prisoners said
+Uses the parity rule to figure out their own hat

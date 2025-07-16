@@ -1,0 +1,20 @@
+Q:
+You are invited to a welcome party with 25 fellow team members. Each of the fellow
+members shakes hands with you to welcome you. Since a number of people in the room
+haven't met each other, there's a lot of random handshaking among others as well. If you
+don't know the total number of handshakes, can you say with certainty that there are at
+least two people present who shook hands with exactly the same number of people?
+
+Solution:
+
+Yes, by the pigeonhole principle, there must be at least two people who shook hands with 
+exactly the same number of people.
+
+Explanation:
+26 people total
+Each person shakes hands with 1-25 others (minimum 1 because everyone greets the new person)
+26 people (pigeons) but only 25 possible handshake counts (pigeonholes)
+Since 26 > 25, at least two people must have the same handshake count
+
+Pigeonhole Principle: If you have n+1 items and n containers, at least one container must contain more than one item.
+Takeaway: Mathematical certainty doesn't require knowing specific details - just the constraints.
