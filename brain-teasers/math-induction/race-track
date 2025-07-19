@@ -1,0 +1,16 @@
+Suppose that you are on a one-way circular race track. There are N gas cans randomly
+placed on different locations of the track and the total sum of the gas in these cans is
+enough for your car to run exactly one circle. Assume that your car has no gas in the gas
+tank initially, but you can put your car at any location on the track and you can pick up
+the gas cans along the way to fill in your gas tank. Can you always choose a starting
+position on the track so that your car can complete the entire circle?
+
+ans:
+Imagine using a test car that has enough gas to complete the full circle. Start it at any gas 
+can and drive the full loop. At each gas can (including the starting point), record how much gas is in your tank before adding the gas from that can.
+
+After completing the circle, look through your list of recorded gas levels. The gas can where 
+the lowest value was recorded (before refueling) is the best place to start if your real car has zero gas in the tank.
+
+Why? Because starting just after that "lowest dip" ensures that from that point forward, your 
+gas level never goes negative — all earlier losses have been “paid for,” and you’re climbing back up from the lowest point.

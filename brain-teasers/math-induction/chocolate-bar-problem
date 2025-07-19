@@ -1,0 +1,10 @@
+A chocolate bar has 6 rows and 8 columns (48 small 1xl squares). You break it into
+individual squares by making a number of breaks. Each time, break one rectangle into
+two smaller rectangles. For example, in the first step you can break the 6x8 chocolate
+bar into a 6x3 one and a 6x5 one. What is the total number of breaks needed in order
+to break the chocolate bar into 48 small squares?
+
+ans:
+induction is the standard way
+but every break increases the total pieces by 1
+so if you want 1 piece of 4x4 to be 16 1x1 peacces, that one piece needs 15 more breaks

@@ -1,0 +1,22 @@
+Can you prove that sqrt(2) is an irrational number? A rational number is a number that can
+be expressed as a ratio of two integers; otherwise it is irrational.
+
+Proof that √2 is irrational (by contradiction):
+
+Assume √2 is rational.
+
+Then we can write √2 = m/n, where m and n are integers with no common factors (simplest form).
+
+Square both sides:
+√2 = m/n → 2 = m² / n² → m² = 2n²
+
+So m² is even → m must be even. Let m = 2x.
+
+Substitute into the equation:
+(2x)² = 2n² → 4x² = 2n² → n² = 2x²
+
+So n² is also even → n is even.
+
+Now both m and n are even, which contradicts the assumption that m/n was in simplest form (no common factors).
+
+Therefore, √2 is irrational.

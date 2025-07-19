@@ -1,0 +1,27 @@
+Seven prisoners are given the chance to be set free tomorrow. An executioner will put a
+hat on each prisoner's head. Each hat can be one of the seven colors of the rainbow and
+the hat colors are assigned completely at the executioner's discretion. Every prisoner can see the hat colors of the other six prisoners, 
+but not his own. They cannot communicate
+with others in any form, or else they are immediately executed. Then each prisoner
+writes down his guess of his own hat color. If at least one prisoner correctly guesses the
+color of his hat, they all will be set free immediately; otherwise they will be executed.
+They are given the night to come up with a strategy. Is there a strategy that they can
+guarantee that they will be set free?
+
+
+ans
+So the trick is to make each prisoner assume a different total sum mod 7.
+
+Prisoner 0 assumes the total sum is 0 mod 7
+
+Prisoner 1 assumes the total sum is 1 mod 7
+
+...
+
+Prisoner 6 assumes the total sum is 6 mod 7
+
+Each one guesses what their hat would have to be if their assumption were true.
+
+And since the real total sum mod 7 has to be one of those 7 values, one of them is definitely assuming correctly, and will guess right.
+
+That one correct guess is enough to save the entire group.
